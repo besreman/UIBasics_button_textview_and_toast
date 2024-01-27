@@ -1,5 +1,6 @@
 package com.minun.uibasicsdemo;
 
+import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -24,6 +25,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 TextView textView = findViewById(R.id.myTextView);
                 textView.setText("clicked!");
                 Toast.makeText(this, "Congratulations you clicked the button!", Toast.LENGTH_SHORT).show();
+
+                Intent intent = new Intent();
+                intent.setClass(this, CheckboxView.class);
+                startActivity(intent);
             }
         }
     }

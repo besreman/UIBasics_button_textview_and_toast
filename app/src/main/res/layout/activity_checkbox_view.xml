@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CheckboxView">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/myRelativeLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp">
+
+    <CheckBox
+            android:id="@+id/myCheckbox_1"
+            android:text="Harry Potter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    <CheckBox
+            android:id="@+id/myCheckbox_2"
+            android:text="The matrix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/myCheckbox_1"/>
+
+    <CheckBox
+            android:id="@+id/myCheckbox_3"
+            android:text="Joker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/myCheckbox_2"
+            android:checked="true"/>
+    </RelativeLayout>
+
+    <RadioGroup
+            android:id="@+id/RadioGroupMaritalStatus"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/myRelativeLayout"
+    android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/radioMarried"
+            android:text="married"
+            />
+        <RadioButton
+            android:id="@+id/radioSingle"
+            android:text="single"
+            />
+        <RadioButton
+                android:id="@+id/radioRel"
+                android:text="in relationship"
+        />
+
+    </RadioGroup>
+
+</RelativeLayout>
